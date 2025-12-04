@@ -1,5 +1,6 @@
-import 'package:bangla_quiz/view/Islamic%20Quiz/Level%201/question_page2.dart';
+
 import 'package:flutter/material.dart';
+import 'package:my_quiz_app/View/Islamic%20Quiz/Level%201/question_page2.dart';
 
 class QuestionPage1 extends StatefulWidget {
   const QuestionPage1({super.key});
