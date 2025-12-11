@@ -39,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 borderRadius: BorderRadius.circular(30),
                 image: DecorationImage(
                     image: AssetImage(
-                        "assets/image/Splash_image-removebg-preview.png"))),
+                        "assets/image/Splash_image-remove-preview.png"))),
           ),
           SizedBox(
             height: 10,
