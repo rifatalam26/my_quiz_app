@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:my_quiz_app/View/Islamic%20Quiz/Level%201/question_page8.dart';
 
 class QuestionPage7 extends StatefulWidget {
   const QuestionPage7({super.key});
@@ -9,7 +9,7 @@ class QuestionPage7 extends StatefulWidget {
 }
 
 class _QuestionPage7State extends State<QuestionPage7> {
-  int counter_seconds=30;
+  int counterSeconds=30;
   @override
   void initState() {
     setTimer();
@@ -18,12 +18,12 @@ class _QuestionPage7State extends State<QuestionPage7> {
   void setTimer()async{
     Future.delayed(Duration(seconds: 1)).then((value){
       setState(() {
-        if(counter_seconds>0){
-          counter_seconds--;
+        if(counterSeconds>0){
+          counterSeconds--;
           setTimer();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>QuestionPage()));
+              MaterialPageRoute(builder: (context)=>QuestionPage8()));
         }
       });
     });
@@ -97,7 +97,7 @@ class _QuestionPage7State extends State<QuestionPage7> {
                                 "assets/image/watch-removebg-preview.png"))),
                   ),
                   Text(
-                    counter_seconds.toString(),
+                    counterSeconds.toString(),
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,

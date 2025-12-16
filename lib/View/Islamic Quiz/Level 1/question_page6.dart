@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_quiz_app/View/Islamic%20Quiz/Level%201/question_page7.dart';
 
 class QuestionPage6 extends StatefulWidget {
   const QuestionPage6({super.key});
@@ -8,7 +9,7 @@ class QuestionPage6 extends StatefulWidget {
 }
 
 class _QuestionPage6State extends State<QuestionPage6> {
-  int counter_seconds=30;
+  int counterSeconds=30;
   @override
   void initState() {
     setTimer();
@@ -17,12 +18,12 @@ class _QuestionPage6State extends State<QuestionPage6> {
   void setTimer()async{
     Future.delayed(Duration(seconds: 1)).then((value){
       setState(() {
-        if(counter_seconds>0){
-          counter_seconds--;
+        if(counterSeconds>0){
+          counterSeconds--;
           setTimer();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>QuestionPage6()));
+              MaterialPageRoute(builder: (context)=>QuestionPage7()));
         }
       });
     });
@@ -96,7 +97,7 @@ class _QuestionPage6State extends State<QuestionPage6> {
                                 "assets/image/watch-removebg-preview.png"))),
                   ),
                   Text(
-                    counter_seconds.toString(),
+                    counterSeconds.toString(),
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -209,7 +210,7 @@ class _QuestionPage6State extends State<QuestionPage6> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const QuestionPage6()));
+                    MaterialPageRoute(builder: (context)=>const QuestionPage7()));
               },
               child: Container(
                 height: 50,

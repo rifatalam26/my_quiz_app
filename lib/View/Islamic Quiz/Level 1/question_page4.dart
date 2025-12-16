@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_quiz_app/View/Islamic%20Quiz/Level%201/question_page5.dart';
 
@@ -10,7 +9,7 @@ class QuestionPage4 extends StatefulWidget {
 }
 
 class _QuestionPage4State extends State<QuestionPage4> {
-  int counter_seconds=30;
+  int counterSeconds=30;
   @override
   void initState() {
     setTimer();
@@ -19,8 +18,8 @@ class _QuestionPage4State extends State<QuestionPage4> {
   void setTimer()async{
     Future.delayed(Duration(seconds: 1)).then((value){
       setState(() {
-        if(counter_seconds>0){
-          counter_seconds--;
+        if(counterSeconds>0){
+          counterSeconds--;
           setTimer();
         }else{
           Navigator.pushReplacement(context,
@@ -98,7 +97,7 @@ class _QuestionPage4State extends State<QuestionPage4> {
                                 "assets/image/watch-removebg-preview.png"))),
                   ),
                   Text(
-                    counter_seconds.toString(),
+                    counterSeconds.toString(),
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,

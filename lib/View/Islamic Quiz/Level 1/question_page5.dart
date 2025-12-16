@@ -9,7 +9,7 @@ class QuestionPage5 extends StatefulWidget {
 }
 
 class _QuestionPage5State extends State<QuestionPage5> {
-  int counter_seconds=30;
+  int counterSeconds=30;
   @override
   void initState() {
     setTimer();
@@ -18,8 +18,8 @@ class _QuestionPage5State extends State<QuestionPage5> {
   void setTimer()async{
     Future.delayed(Duration(seconds: 1)).then((value){
       setState(() {
-        if(counter_seconds>0){
-          counter_seconds--;
+        if(counterSeconds>0){
+          counterSeconds--;
           setTimer();
         }else{
           Navigator.pushReplacement(context,
@@ -97,7 +97,7 @@ class _QuestionPage5State extends State<QuestionPage5> {
                                 "assets/image/watch-removebg-preview.png"))),
                   ),
                   Text(
-                    counter_seconds.toString(),
+                    counterSeconds.toString(),
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
