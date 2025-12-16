@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_quiz_app/View/Islamic%20Quiz/Level%201/question_page6.dart';
 
 class QuestionPage5 extends StatefulWidget {
   const QuestionPage5({super.key});
@@ -22,7 +23,7 @@ class _QuestionPage5State extends State<QuestionPage5> {
           setTimer();
         }else{
           Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context)=>QuestionPage5()));
+              MaterialPageRoute(builder: (context)=>QuestionPage6()));
         }
       });
     });
@@ -209,7 +210,7 @@ class _QuestionPage5State extends State<QuestionPage5> {
             InkWell(
               onTap: (){
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context)=>const QuestionPage5()));
+                    MaterialPageRoute(builder: (context)=>const QuestionPage6()));
               },
               child: Container(
                 height: 50,
